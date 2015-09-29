@@ -1,0 +1,19 @@
+
+{
+  
+  "Resources" : {
+
+
+"Ec2Instance" : {
+  "Type" : "AWS::EC2::Instance",
+  "Properties" : {
+    "ImageId" : "ami-5189a661" ,
+    "InstanceType" : "t2.micro",
+    "KeyName" : "new",
+    "NetworkInterfaces": [ {
+      "AssociatePublicIpAddress": "false",
+      "DeviceIndex": "0",
+      "GroupSet": [ "sg-0a9d0d6e" ],
+      "SubnetId": "subnet-5847333d"
+    } ]
+  } } } } 
