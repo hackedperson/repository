@@ -1,0 +1,17 @@
+
+
+
+{
+    
+    "Resources" :{
+"MyLoadBalancer" : {
+    "Type" : "AWS::ElasticLoadBalancing::LoadBalancer",
+    "Properties" : {
+        "AvailabilityZones" : [ "us-west-2b" ],
+        "Listeners" : [ {
+            "LoadBalancerPort" : "80",
+            "InstancePort" : "80",
+            "Protocol" : "HTTP"
+        } ]
+    }
+} }}
