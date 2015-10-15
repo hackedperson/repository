@@ -12,12 +12,12 @@ end
       cat /tmp/parms_to_append.conf >> /etc/haproxy/haproxy.cfg
       rm /tmp/parms_to_append.conf
    EOF
-   not_if "grep -q MY_IDENTIFIER /etc/config"
+   not_if "grep -q frontend haproxy_in /etc/haproxy/haproxy.cfg"
  end
 
 
 
-ruby_block "provide dovecot with custom MySQL connection info" do
+ruby_block "enalbe haproxy" do
   block do
     file = Chef::Util::FileEdit.new("/etc/default/haproxy")
     file.search_file_replace_line( "ENABLED=0" ,"ENABLED=1")
