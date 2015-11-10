@@ -1,0 +1,5 @@
+{ "name": "phpldapadmin",
+  "description": "Installs/insatll apache webserver",
+  "long_description": "",
+    "license": "All rights reserved",
+  }
