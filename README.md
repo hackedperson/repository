@@ -1,6 +1,6 @@
 
 #Welcome My Github Repository.
-This repository contain some basic useful scripts and cookbooks.
+This repository contain some basic useful example scripts and cookbooks.
 
 Repository's Files and Folders description 
 
